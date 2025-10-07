@@ -10,7 +10,7 @@ function App() {
     <div className="d-flex flex-column min-vh-100">
       <Header />
       <ToDoList />
-      <button className="btn btn-primary m-3 d-block mx-auto">Add To-Do</button>
+      {/* <button className="btn btn-primary m-3 d-block mx-auto">Add To-Do</button> */}
       <Footer />
     </div>
   );
