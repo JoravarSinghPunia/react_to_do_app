@@ -5,10 +5,13 @@ const AddForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
         console.log('Form submitted with name:', name);
-        setName(''); 
-        props.setTodos(prev => [...prev, {id: Date.now(), todoDescription: name, todoDateCreated: new Date().toISOString(), todoCompleted: false}]);
+        setName('');
+        props.addTodo({
+            todoDescription: name,
+            todoCompleted: false,
+            todoDateCreated: new Date().toISOString()
+        });
     };
 
     return (
@@ -31,3 +34,6 @@ const AddForm = (props) => {
 };
 
 export default AddForm;
+
+
+
