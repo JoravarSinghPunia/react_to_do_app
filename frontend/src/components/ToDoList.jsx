@@ -1,5 +1,4 @@
 import { useState } from "react";
-import sampleData from "../sampleData.json";
 import ToDo from "./ToDo";
 import AddForm from "./AddForm";
 
