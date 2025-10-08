@@ -20,7 +20,7 @@ const EditForm = (props) => {
     };
 
     fetchTodos();
-  }, []);
+  }, [id]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

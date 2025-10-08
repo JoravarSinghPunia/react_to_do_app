@@ -44,11 +44,6 @@ const ToDoList = () => {
     axios.patch(`${API_URL}/${id}`, { todoDescription: newName });
   };
 
-  const addTodo = (newTodo) => {
-    setTodos((prevTodos) => [...prevTodos, newTodo]);
-    axios.post(API_URL, newTodo);
-  };
-
   return (
     <div className="container mt-4">
       <h2 className="mb-4">To-Do List</h2>
